@@ -33,7 +33,7 @@ cd terraform
 terraform init
 terraform apply
 ```
-При необходимости можно изменить имя тега: в файле terraform.tfvars исправьте image_tag = "1-0-0" на необходимый тег.
+При необходимости можно изменить имя тега: в файле terraform.tfvars исправьте image_tag = "1" на необходимый тег.
 
 5. Удаление ресурсов
 ```
