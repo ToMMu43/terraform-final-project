@@ -2,7 +2,11 @@ terraform_project = "/home/tommu/Documents/_Courses/slurm/DevOps Upgrade/terrafo
 public_ssh_key_path = "~/.ssh/id_rsa.pub"
 #public_ssh_key_path = ""
 
+
 image_family = "slurm-images"
+image_name = "nginx"
+image_tag = "1"
+
 vm_name = "test"
 
 resources = ({

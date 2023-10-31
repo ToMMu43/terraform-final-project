@@ -3,11 +3,14 @@ variable "folder_id" {
   description = "folder id for current project"
 }
 
-variable "image_id" {
+variable "image_name" {
   type = string
-#  default = "fd8t45eol5jkpefilfp3 "
-  default = "fd8opdtg61g7cp1ffd0k"
-  description = "image id from packer building"
+  description = "name for packer building image"
+}
+
+variable "image_tag" {
+  type = string
+  description = "tag for packer building image"
 }
 
 variable "image_family" {

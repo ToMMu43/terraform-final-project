@@ -1,8 +1,6 @@
-# data "yandex_compute_image" "nginx_image" {
-#   family = "slurm-images"
-#   name = "nginx-1"
-# }
-
+data "yandex_compute_image" "this" {
+  name = "${var.image_name}-${var.image_tag}"
+}
 
 locals {
   preffix = "slurm"
@@ -37,7 +35,7 @@ resource "yandex_compute_instance_group" "this" {
     boot_disk {
       mode = "READ_WRITE"
       initialize_params {
-        image_id = "${var.image_id}"
+        image_id = data.yandex_compute_image.this.id
         size     = "${var.resources.disk}"
       }
     }
