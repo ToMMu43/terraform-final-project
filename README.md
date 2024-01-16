@@ -1,5 +1,5 @@
-# slurm-tf-final-project
-Slurm DevOps Upgrade 5 поток: Terraform practice (Yandex Cloud provider)
+# terraform-final-project
+DevOps курс 5 поток: Terraform practice (Yandex Cloud provider)
 
 1. Подготовка к работе
 Для работы необходимы:
